@@ -1,0 +1,35 @@
+#loginForm input, #signupForm input, #resetPassForm input {
+  padding: 5px 10px;
+  margin-bottom:5px;
+}
+
+.email{
+  width:50%;
+  float: left;
+}
+
+#app{
+  width:50%;
+  float: left;
+  text-align: center;
+}
+
+.container{
+  margin:0 auto;
+  max-width:1270px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.member-link{
+  margin-bottom:10px;
+  display: block;
+}
+
+.btnSubmit{
+  display: block;
+  margin: 0 auto;
+  margin-top:15px;
+}

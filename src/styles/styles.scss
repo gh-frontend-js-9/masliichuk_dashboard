@@ -1,0 +1,10 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "font-awesome.min.css";
+@import "./components/_login.scss";
+@import "./components/_messages.scss";
+@import "./components/_stats.scss";
+@import "./components/addproject.scss";
+
+header{
+  background-color: #2f3242;
+}
