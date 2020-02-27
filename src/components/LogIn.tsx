@@ -2,6 +2,7 @@ import React, { SyntheticEvent } from 'react';
 import { ApiService } from '../services/apiService';
 import { Redirect } from 'react-router';
 import { Form, FormGroup, Input, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 interface IProps {
 }
@@ -52,7 +53,7 @@ export class LogIn extends React.Component<IProps, IState> {
         return(
             <Form className="text-center signup">
                 <h1>Log in</h1>
-                <a href="#">Not a member?</a>
+                <Link to='/' >Not a member?</Link>
                 <FormGroup>
                     <Input type="email" name="email" onChange={this.handleChange}  placeholder="Email" />
                 </FormGroup>
