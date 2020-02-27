@@ -51,7 +51,7 @@ export class SignUp extends React.Component<IProps, IState> {
 
     render(){
         if (this.state.redirectToStats) {
-            return <Redirect to='/stats' />
+            return <Redirect to='/stats'/>
         }
         return(
             <Form className="text-center signup">
