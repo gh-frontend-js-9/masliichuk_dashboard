@@ -3,8 +3,10 @@ import { ApiService } from '../services/apiService';
 import { Redirect } from 'react-router';
 import { Form, FormGroup, Input, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import configureStore from '../services/ConfiguredStore';
 
 interface IProps {
+    setUser?: any;
 }
 
 interface IState {
@@ -14,7 +16,7 @@ interface IState {
    
 }
 
-export class LogIn extends React.Component<IProps, IState> {
+export default class LogIn extends React.Component<IProps, IState> {
     constructor(props: any) {
         super(props);
         this.state = {
@@ -36,6 +38,7 @@ export class LogIn extends React.Component<IProps, IState> {
         ).then(res => {
             console.log(res);
             if (res.statusCode >= 200 && res.statusCode <= 299) {
+                this.props.setUser(res);
                 this.setState({redirectToStats: true});
             } else {
                 alert('Error');

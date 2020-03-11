@@ -2,15 +2,13 @@ import React from 'react';
 import './styles/styles.scss';
 import { Stats } from './components/Stats';
 import { SignUp } from './components/SignUp';
-import { LogIn } from './components/LogIn';
+import LogIn from './components/LogInContainer';
 
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import { ResetPass } from './components/ResetPass';
 
 
 const App: React.FC = () => {
-
-  
 
   return (
     <BrowserRouter>
